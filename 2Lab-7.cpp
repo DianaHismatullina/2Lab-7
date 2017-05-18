@@ -1,10 +1,9 @@
 #include "stdafx.h"
 #include <iostream>
 #include <conio.h>
-#include <stdlib.h>//выделение пямяти
-#include <fstream>//чтение
+#include <stdlib.h>
+#include <fstream>
 #include <string>
-//#include <cstring>
 
 using namespace std;
 
@@ -34,7 +33,6 @@ public:
 		this->Columns = Columns;
 		string path;
 		cout << endl << "Print the name of file" << endl; cin >> path;
-		//string path = "C:\\Users\\Максим\\Desktop\\Visual\\Matrix.txt";
 		matr = (Type **)malloc(Lines * sizeof(Type *));
 		for (unsigned int i = 0; i < Lines; ++i)
 			matr[i] = (Type *)malloc(Columns * sizeof(Type));
