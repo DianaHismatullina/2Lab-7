@@ -28,4 +28,4 @@ Type number you want to delete: 3
 
 Press any button to exit the program
 
-[![Build Status](https://travis-ci.org/sc929/2Lab-5.svg?branch=master)](https://travis-ci.org/sc929/2Lab-5)
+[![Build Status](https://travis-ci.org/sc929/2Lab-7.svg?branch=master)](https://travis-ci.org/sc929/2Lab-7)
