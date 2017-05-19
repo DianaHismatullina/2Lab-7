@@ -22,7 +22,7 @@ SCENARIO("AddTest", "[!mayfail]") {
 	Matr2.matr[0][0] = 5;
 	Matr2.matr[0][1] = 4;
 	Matr2.matr[1][0] = 1;
-	MatMatr2r1.matr[1][1] = 2;
+	Matr2.matr[1][1] = 2;
 
 	Matrix<int> res_matr(2, 2);
 	res_matr.matr[0][0] = 5;
