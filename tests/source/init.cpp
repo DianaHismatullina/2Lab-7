@@ -1,13 +1,6 @@
 #include <2Lab-7.hpp>
 #include <catch.hpp>
 
-SCENARIO("Add") {
-	Matrix<int> r;
-	Matrix<int>* tree;
-    int rv = r.Add(10, tree);
-    
-    REQUIRE( rv == 10);
-}
 SCENARIO("DefaultConstructorTest") {
 	Matrix<int> mat;
 	REQUIRE(mat.Lines() == 0);
