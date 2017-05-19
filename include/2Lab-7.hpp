@@ -82,8 +82,8 @@ public:
 		}
 	}
 
-	friend ostream& operator << (ostream&, const Matrix<Type>&);
-	friend istream& operator >> (istream&, const Matrix<Type>&);
+	template <typename K> friend ostream& operator << (ostream& ciout, const Matrix<K>& matri);
+	template <typename U> friend istream& operator >> (istream& ciin, Matrix<U>& matri);
 
 	bool operator ==(Matrix<Type>& res_matr)
 	{
