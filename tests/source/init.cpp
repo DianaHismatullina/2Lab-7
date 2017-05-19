@@ -29,8 +29,12 @@ SCENARIO("AddTest", "[!mayfail]") {
 	Matr1.matr[0][1] = 12;
 	Matr1.matr[1][0] = 3;
 	Matr1.matr[1][1] = 5;
+	
+	bool res = false;
+	if((Matr1 + Matr2) == res_matr)
+		res = true;
 
-	REQUIRE((Matr1 + Matr2) == res_matr);
+	REQUIRE(res = true);
 }
 
 SCENARIO("MultiTest", "[!mayfail]") {
