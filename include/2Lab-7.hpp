@@ -82,9 +82,6 @@ public:
 		}
 	}
 
-	template <typename K> friend ostream& operator << (ostream& ciout, const Matrix<K>& matri);
-	template <typename U> friend istream& operator >> (istream& ciin, Matrix<U>& matri);
-
 	bool operator ==(Matrix<Type>& res_matr)
 	{
 		if (res_matr.Lines != Lines || res_matr.Columns != Columns)
@@ -162,17 +159,3 @@ public:
 	}
 
 };
-
-template <class Type>
-ostream & operator << (ostream & ciout, Matrix<Type> &matri)
-{
-	matri.printf(ciout);
-	return ciout;
-}
-
-template <class Type>
-istream & operator >> (istream& ciin, Matrix<Type> &matri)
-{
-	matri.writef(ciin);
-	return ciin;
-}
