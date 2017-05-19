@@ -77,7 +77,7 @@ public:
 		{
 			for (unsigned int j = 0; j < Columns; ++j)
 			{
-				cin >> element[i][j];
+				cin >> matr[i][j];
 			}
 		}
 	}
