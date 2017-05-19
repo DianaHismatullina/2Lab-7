@@ -19,16 +19,16 @@ SCENARIO("AddTest", "[!mayfail]") {
 	Matr1.matr[1][1] = 3;
 
 	Matrix<int> Matr2(2, 2);
-	Matr1.matr[0][0] = 5;
-	Matr1.matr[0][1] = 4;
-	Matr1.matr[1][0] = 1;
-	Matr1.matr[1][1] = 2;
+	Matr2.matr[0][0] = 5;
+	Matr2.matr[0][1] = 4;
+	Matr2.matr[1][0] = 1;
+	MatMatr2r1.matr[1][1] = 2;
 
 	Matrix<int> res_matr(2, 2);
-	Matr1.matr[0][0] = 5;
-	Matr1.matr[0][1] = 12;
-	Matr1.matr[1][0] = 3;
-	Matr1.matr[1][1] = 5;
+	res_matr.matr[0][0] = 5;
+	res_matr.matr[0][1] = 12;
+	res_matr.matr[1][0] = 3;
+	res_matr.matr[1][1] = 5;
 	
 	bool res = false;
 	if((Matr1 + Matr2) == res_matr)
@@ -45,16 +45,16 @@ SCENARIO("MultiTest", "[!mayfail]") {
 	Matr1.matr[1][1] = 3;
 
 	Matrix<int> Matr2(2, 2);
-	Matr1.matr[0][0] = 3;
-	Matr1.matr[0][1] = 4;
-	Matr1.matr[1][0] = 1;
-	Matr1.matr[1][1] = 2;
+	Matr2.matr[0][0] = 3;
+	Matr2.matr[0][1] = 4;
+	Matr2.matr[1][0] = 1;
+	Matr2.matr[1][1] = 2;
 
 	Matrix<int> res_matr(2, 2);
-	Matr1.matr[0][0] = 4;
-	Matr1.matr[0][1] = 8;
-	Matr1.matr[1][0] = 9;
-	Matr1.matr[1][1] = 14;
+	res_matr.matr[0][0] = 4;
+	res_matr.matr[0][1] = 8;
+	res_matr.matr[1][0] = 9;
+	res_matr.matr[1][1] = 14;
 
 	REQUIRE((Matr1*Matr2) == res_matr);
 }
