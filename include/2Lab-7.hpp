@@ -57,27 +57,27 @@ public:
 		file.close();
 	}
 
-	void printf(ostream&)
+	void printf(ostream& ciout)
 	{
-		cout << endl << "Matrix: " << endl;
+		ciout << endl << "Matrix: " << endl;
 
 		for (unsigned int i = 0; i < Lines; ++i)
 		{
 			for (unsigned int j = 0; j < Columns; ++j)
 			{
-				cout << matr[i][j] << " ";
+				ciout << matr[i][j] << " ";
 			}
-			cout << endl;
+			ciout << endl;
 		}
 	}
 
-	void writef(istream&)
+	void writef(istream& ciin)
 	{
 		for (unsigned int i = 0; i < Lines; ++i)
 		{
 			for (unsigned int j = 0; j < Columns; ++j)
 			{
-				cin >> matr[i][j];
+				ciin >> matr[i][j];
 			}
 		}
 	}
@@ -164,7 +164,7 @@ public:
 };
 
 template <class Type>
-ostream & operator<<(ostream & ciout, Matrix<Type> &matri)
+ostream & operator << (ostream & ciout, Matrix<Type> &matri)
 {
 	matri.printf(ciout);
 	return ciout;
