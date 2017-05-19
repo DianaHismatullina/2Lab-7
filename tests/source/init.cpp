@@ -3,8 +3,8 @@
 
 SCENARIO("DefaultConstructorTest") {
 	Matrix<int> mat;
-	REQUIRE(mat.Lines == 0);
-	REQUIRE(mat.Columns == 0);
+	REQUIRE(mat.Lines == 2);
+	REQUIRE(mat.Columns == 2);
 }
 
 SCENARIO("ConstructorTest") {
