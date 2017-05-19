@@ -11,7 +11,7 @@ SCENARIO("ConstructorTest") {
 	Matrix<int> mat(3, 3);
 	REQUIRE(mat.Lines == mat.Columns);
 }
-SCENARIO("AddTest", "[!mayfail]") {
+SCENARIO("AddTest") {
 	Matrix<int> Matr1(2, 2);
 	Matr1.matr[0][0] = 0;
 	Matr1.matr[0][1] = 8;
@@ -29,15 +29,11 @@ SCENARIO("AddTest", "[!mayfail]") {
 	res_matr.matr[0][1] = 12;
 	res_matr.matr[1][0] = 3;
 	res_matr.matr[1][1] = 5;
-	
-	bool res = false;
-	if((Matr1 + Matr2) == res_matr)
-		res = true;
 
-	REQUIRE(res == true);
+	REQUIRE((Matr1 + Matr2) == res_matr);
 }
 
-SCENARIO("MultiTest", "[!mayfail]") {
+SCENARIO("MultiTest") {
 	Matrix<int> Matr1(2, 2);
 	Matr1.matr[0][0] = 0;
 	Matr1.matr[0][1] = 4;
