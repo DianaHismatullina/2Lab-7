@@ -34,7 +34,7 @@ SCENARIO("AddTest", "[!mayfail]") {
 	if((Matr1 + Matr2) == res_matr)
 		res = true;
 
-	REQUIRE(res = true);
+	REQUIRE(res == true);
 }
 
 SCENARIO("MultiTest", "[!mayfail]") {
