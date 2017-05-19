@@ -3,13 +3,13 @@
 
 SCENARIO("DefaultConstructorTest") {
 	Matrix<int> mat;
-	REQUIRE(mat.Lines() == 0);
-	REQUIRE(mat.Columns() == 0);
+	REQUIRE(mat.Lines == 0);
+	REQUIRE(mat.Columns == 0);
 }
 
 SCENARIO("ConstructorTest") {
 	Matrix<int> mat(3, 3);
-	REQUIRE(mat.Lines() == mat.Columns());
+	REQUIRE(mat.Lines == mat.Columns);
 }
 SCENARIO("AddTest", "[!mayfail]") {
 	Matrix<int> Matr1(2, 2);
